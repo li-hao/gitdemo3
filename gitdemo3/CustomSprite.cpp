@@ -10,7 +10,7 @@
 
 void CustomSprite::draw()
 {
-    CCSize s = CCDirector::sharedDirector()->getWinSize();
+    //CCSize s = CCDirector::sharedDirector()->getWinSize();
     CCSprite::draw();
-    ccDrawLine(ccp(0, 0), ccp(s.width, s.height));
+    ccDrawLine(ccp(0, 0), ccp(winSize.width, winSize.height));
 }

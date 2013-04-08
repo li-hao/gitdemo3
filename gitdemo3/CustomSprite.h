@@ -14,6 +14,7 @@ using namespace cocos2d;
 
 class CustomSprite : public CCSprite {
     
+    const  CCSize winSize = CCDirector::sharedDirector()->getWinSize();
 public:
     virtual void draw(void);
 };

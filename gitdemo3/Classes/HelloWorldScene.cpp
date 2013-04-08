@@ -70,7 +70,7 @@ bool HelloWorld::init()
 
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
-    
+    pSprite->runAction(CCRotateTo::create(5, 360));
     return true;
 }
 

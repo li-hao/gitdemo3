@@ -207,6 +207,7 @@
 		B2649D0317125FCC0090DD5A /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2649D0217125FCC0090DD5A /* HttpClient.cpp */; };
 		B2649D0C17125FCC0090DD5A /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2649D0B17125FCC0090DD5A /* AppDelegate.cpp */; };
 		B2649D0F17125FCC0090DD5A /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2649D0E17125FCC0090DD5A /* HelloWorldScene.cpp */; };
+		B2649D20171274CB0090DD5A /* CustomSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2649D1E171274CA0090DD5A /* CustomSprite.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -650,6 +651,8 @@
 		B2649D0B17125FCC0090DD5A /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		B2649D0D17125FCC0090DD5A /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		B2649D0E17125FCC0090DD5A /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		B2649D1E171274CA0090DD5A /* CustomSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomSprite.cpp; sourceTree = "<group>"; };
+		B2649D1F171274CB0090DD5A /* CustomSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSprite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1554,6 +1557,8 @@
 				B2649D0B17125FCC0090DD5A /* AppDelegate.cpp */,
 				B2649D0D17125FCC0090DD5A /* HelloWorldScene.h */,
 				B2649D0E17125FCC0090DD5A /* HelloWorldScene.cpp */,
+				B2649D1E171274CA0090DD5A /* CustomSprite.cpp */,
+				B2649D1F171274CB0090DD5A /* CustomSprite.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1809,6 +1814,7 @@
 				B2649D0317125FCC0090DD5A /* HttpClient.cpp in Sources */,
 				B2649D0C17125FCC0090DD5A /* AppDelegate.cpp in Sources */,
 				B2649D0F17125FCC0090DD5A /* HelloWorldScene.cpp in Sources */,
+				B2649D20171274CB0090DD5A /* CustomSprite.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

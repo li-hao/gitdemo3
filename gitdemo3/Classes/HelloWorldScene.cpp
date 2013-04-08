@@ -1,6 +1,6 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
-
+#include "CustomSprite.h"
 using namespace cocos2d;
 using namespace CocosDenshion;
 
@@ -63,8 +63,10 @@ bool HelloWorld::init()
     this->addChild(pLabel, 1);
 
     // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
-
+    //CCSprite* pSprite = CCSprite::create("HelloWorld.png");
+    CCSprite * pSprite = new CustomSprite();
+    pSprite->initWithFile("HelloWorld.png");
+    pSprite->autorelease();
     // position the sprite on the center of the screen
     pSprite->setPosition( ccp(size.width/2, size.height/2) );
 
@@ -80,6 +82,8 @@ bool HelloWorld::init()
     pSprite->runAction(forever);
 
     //添加个注释玩玩！
+    
+    
     return true;
 }
 

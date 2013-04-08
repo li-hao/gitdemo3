@@ -72,6 +72,12 @@ bool HelloWorld::init()
     this->addChild(pSprite, 0);
     
     CCLog(this->description());
+    
+    CCFiniteTimeAction * action1 = CCMoveTo::create(3, ccp(pSprite->getPosition().x, size.height));
+    CCFiniteTimeAction * action2 = CCMoveTo::create(3, ccp(pSprite->getPosition().x, 0));
+    CCFiniteTimeAction * seq = CCSequence::create(action1,action2,NULL);
+    CCFiniteTimeAction * forever = CCRepeatForever::create((CCActionInterval *)seq);
+    pSprite->runAction(forever);
     return true;
 }
 

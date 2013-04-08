@@ -78,6 +78,8 @@ bool HelloWorld::init()
     CCFiniteTimeAction * seq = CCSequence::create(action1,action2,NULL);
     CCFiniteTimeAction * forever = CCRepeatForever::create((CCActionInterval *)seq);
     pSprite->runAction(forever);
+
+    //添加个注释玩玩！
     return true;
 }
 

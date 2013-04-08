@@ -83,6 +83,12 @@ bool HelloWorld::init()
 
     //添加个注释玩玩！
     
+    CCActionInterval * jumpBy = CCJumpBy::create(5, ccp(-size.width, 0), 30, 5);
+    CCActionInterval * jumpBack = jumpBy->reverse();
+    CCFiniteTimeAction * seq1 = CCSequence::create(jumpBy,jumpBack,NULL);
+    CCRepeatForever* re = CCRepeatForever::create((CCActionInterval*)seq1);
+    
+    pCloseItem->runAction(re);
     
     return true;
 }
